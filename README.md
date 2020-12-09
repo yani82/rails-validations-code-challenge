@@ -19,3 +19,5 @@
 3. The date/time can not be in the past.
 4. The customer name must be capitalized.
 5. The customer name can not be Jeff (Jeff is banned from the rental shop for prior boat damage)
+* BONUS
+1. After proving your validations work in the Rails console, display your validation errors in the views
