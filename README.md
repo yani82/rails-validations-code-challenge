@@ -1,11 +1,19 @@
 # Rails Validations
 
 ## Part 1: Conceptual questions
-1. Why do we use validation?
+1. Why do we use validation? 
+- To protect the data the user submits and the data they see in app (from submitting bad data) 
+- We want to protect our db from unauthorized requests 
 2. What are the [two] general types of "bad user data"?
+- User misuses app and inserts bad data that doesn't make sense/blank/filtering data 
+- Malicious users/ purposely misusing or stealing data 
 3. When do validations get triggered?
+- Defining in our model layer of our MVC 
+- Validations are run right before saving 
+- These methods: .save, .create, .update, .valid? - will determine if a record a record is valid
 4. How can we see if and why a record failed validation?
-
+- .errors provides summary of failed validation 
+- 
 ## Part 2: Expand your boat rental app to include model validations
 * You were contracted to build a rental platform used by internal employees of a boat rental store. Last week's task was to build as much of the CRUD functionality as possible. This week, you will be adding validations to your main model.
 * IF YOU HAVEN'T ALREADY:
